@@ -9,9 +9,8 @@ BASENAME="$1"
 PLAY_FILE=""
 
 for ext in "${EXTENSIONS[@]}"; do
-  FILE=$(find "$SEARCH_DIR" -type f -name "$BASENAME.$ext" | head -n 1)
-  if [[ -n "$FILE" ]]; then
-    PLAY_FILE="$FILE"
+  if [[ -f "$SEARCH_DIR/$BASENAME.$ext" ]]; then
+    PLAY_FILE="$SEARCH_DIR/$BASENAME.$ext"
     break
   fi
 done
