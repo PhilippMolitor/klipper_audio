@@ -1,0 +1,3 @@
+{
+  "debian": ["sox", "libsox-fmt-mp3"]
+}
