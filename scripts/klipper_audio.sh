@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Settings
-SEARCH_DIR="~/printer_data/config/audio"
+SEARCH_DIR="$HOME/printer_data/config/audio"
 EXTENSIONS=("wav" "mp3" "ogg")
 
 # Variavbles
